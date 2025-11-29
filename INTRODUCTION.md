@@ -4,6 +4,9 @@ Cold War fears, ARPANET, and the core building blocks of modern computer network
 ## the alarm of invention
 On October 4, 1957, The Story begin when cold war was it height the Soviet Union launched the world’s first artificial satellite into orbit. The satellite, known as **Sputnik**, did not do much: It relayed blips and bleeps from its radio transmitters as it circled the Earth. Still, to many Americans, the beach ball-sized Sputnik was proof of something alarming.
 ![cc5847e25960569adea97e71af46bd69.png](_resources/cc5847e25960569adea97e71af46bd69.png)
+
+
+
 the federal government itself formed new agencies, such as the National Aeronautics and Space Administration (NASA) and the Department of Defense’s Advanced Research Projects Agency (ARPA), to develop space-age technologies such as rockets, weapons and computers.
 
 ## The starting of Networking
