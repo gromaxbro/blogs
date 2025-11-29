@@ -1,4 +1,4 @@
-# Notes
+# C / C++ THEORY
 
 # how C code is converted in machine code
 
