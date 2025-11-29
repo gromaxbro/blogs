@@ -1,6 +1,4 @@
-# C / C++ THEORY
-
-# how C code is converted in machine code
+# COMPILER & INTERPRETER 
 
 Programs written in high-level languages like C must be translated into machine-readable instructions before they can execute on a computer.
 
