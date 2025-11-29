@@ -1,4 +1,5 @@
 # NETWORKING THEORY : FROM START TO MODERN
+Cold War fears, ARPANET, and the core building blocks of modern computer networking explained simply.
 
 ## the alarm of invention
 On October 4, 1957, The Story begin when cold war was it height the Soviet Union launched the world’s first artificial satellite into orbit. The satellite, known as **Sputnik**, did not do much: It relayed blips and bleeps from its radio transmitters as it circled the Earth. Still, to many Americans, the beach ball-sized Sputnik was proof of something alarming.
