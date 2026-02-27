@@ -215,6 +215,18 @@ u := User{Name: "Alice", Age: 20}
 
 now send the rocket `bytes.NewReader` convert into buffer (bytes)
 
+*io.NewReader is just wraps the bytes its usually just*
+
+```
+type Reader struct {
+    data []byte
+    index int
+}
+```
+
+means if a func do_somthing(io.NewReader) he just can io.Read(data) it copies the litrally []byte (data[index:])
+
+
 `req, err := http.NewRequest("POST", "https://httpbin.org/post", bytes.NewReader(body))`
 
 
