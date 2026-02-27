@@ -28,9 +28,11 @@ can also put response.Body.Close() at the end but connection may still be open i
 `io.ReadAll(resp.Body)`
 when you run this
 This drains data from the kernel's network
-buffers (where the server's response is already sitting) into our
-program's memory as a []byte slice. No additional request is made to
-the server - we're just consuming data that was already transmitted.
+buffers (where the server's response is already sitting) into our program's memory.
+Copies bytes from kernel receive buffer
+Into your program’s memory (userspace)
+Returns number of bytes copied as a []byte slice. 
+No additional request is made to the server - we're just consuming data that was already transmitted.
 
 ```
 b, err := io.ReadAll(response.Body)
