@@ -1,4 +1,5 @@
 # History of Storage
+Before SSDs, computers stored data using paper holes, sound waves, and tiny magnets — every step bringing us closer to modern storage.
 ## **punch cards** 
 was the the way to store data for long time like right now ssd,hdd. it had holes where computers read that from light sensors.
 ![b9d5bb2ec1bca5217b1a70d176aabd2b.png](../_resources/b9d5bb2ec1bca5217b1a70d176aabd2b.png)
