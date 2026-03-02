@@ -278,3 +278,43 @@ Write()
 Read()
 ```
 Socket is locked to one address.
+
+
+```
+package main
+
+import (
+	"fmt"
+	"net"
+	// "math/rand/v2"
+)
+
+func main() {
+	address, err := net.ResolveUDPAddr("udp", "time.nist.gov:123") //setup address (returns ip)
+	if err != nil {
+		fmt.Println("error resolving")
+		return
+	}
+	fmt.Println(address)
+
+	conn, errr := net.DialUDP("udp", nil, address) // setup dial a target connection somthing
+	if errr != nil {
+		fmt.Println("error conn")
+		return
+	}
+	fmt.Println(conn)
+
+	df, _ := conn.Write([]byte("wasap")) // write
+	fmt.Println(df)
+	
+	buffer := make([]byte, 1024)
+    n, _, err := conn.ReadFromUDP(buffer) // read buffer
+    if err != nil {
+        // log.Printf("Receive error: %v", err)
+        return
+    }
+    fmt.Printf("Server says: %s\n", string(buffer[:n]))
+
+}
+
+```
