@@ -258,4 +258,23 @@ full code:
     log.Println("Status:", resp.Status)
 ```
 
+# UDP
 
+now we gonna do fun. udp used in streaming service .gaming where speed better than efficency.
+
+two ways to send UDP
+1. Unconnected UDP (Raw Packet Mode)
+```
+ListenUDP()
+WriteTo()
+ReadFrom()
+ ```
+You manually specify destination each time.
+
+2.Connected UDP (Locked To One Remote)
+```
+DialUDP()
+Write()
+Read()
+```
+Socket is locked to one address.
