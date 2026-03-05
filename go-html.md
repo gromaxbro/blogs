@@ -258,6 +258,40 @@ full code:
     log.Println("Status:", resp.Status)
 ```
 
+## READING JSON DATA
+
+first create a struct of json structure
+NOTE := VARIABLE NAME MUST START WITH CAPITAL LETTER
+```
+type Location struct {
+	Latitude  float64 `json:"lat"`
+	Longitude float64 `json:"lon"`
+}
+```
+now use `json.Unmarshal(bodyBytes, &target)` target is refrence of the object
+```
+request, error := http.NewRequest("GET", "http://ip-api.com/json/79.184.240.108?fields=192", nil)
+	if error != nil {
+		fmt.Println("error bro")
+		return
+	}
+	client := &http.Client{}
+	resp, errr := client.Do(request)
+	if errr != nil {
+		fmt.Println("error bro 2")
+		return
+	}
+	defer resp.Body.Close()
+	bodyBytes, err := io.ReadAll(resp.Body) // Read the entire body into a byte slice
+	if err != nil {
+		return
+	}
+
+	var target Location
+	json.Unmarshal(bodyBytes, &target)
+	fmt.Println(target.Longitude)
+```
+
 # UDP
 
 now we gonna do fun. udp used in streaming service .gaming where speed better than efficency.
