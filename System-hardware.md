@@ -1,6 +1,7 @@
-
 # Understanding How Computers Really Work
 My notes and learnings on computer architecture, covering CPUs, memory, registers, cache, control units, and instruction execution. A beginner's exploration of how computers work internally.
+
+
 Think of it as the blueprint of a computer.
 
 It includes things like:
