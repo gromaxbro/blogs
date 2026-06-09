@@ -20,7 +20,7 @@ It includes things like:
 The CPU (Central Processing Unit) is the brain of the computer. Its job is to **Read** instructions, **Understand (decode)** them, **Execute** them.
 every program every process every maths problem is done by cpu.
 
-![03a7fcdd7be29428fea19eeea8242316.png](:/f5d06f5fb6444064b1f6100ccff915a7)
+![03a7fcdd7be29428fea19eeea8242316.png](../_resources/03a7fcdd7be29428fea19eeea8242316.png)
 
 ### A cpu consist of:
 1. ALU (Arithmetic Logic Unit)
@@ -36,7 +36,7 @@ It takes input from registers, processes the data, and stores the result in a de
 
 
 
-![687272661a77b94baa1f457b56f41499.png](:/d50bfbde72f24016afbb51dfc98fc4e4)
+![687272661a77b94baa1f457b56f41499.png](../_resources/687272661a77b94baa1f457b56f41499.png)
 
 it can perform :
 
@@ -56,7 +56,7 @@ most of cpu's alu just run the addition x times cause multiplication is addition
 ## Registers
 Registers are small, fast storage elements inside the CPU used to temporarily hold data, addresses, or instructions. They are directly connected to the data path and ALU, enabling high-speed access
 
-![ca17691734bcd659d3628c777e51f8f1.png](:/16b2cc69edff438785c424bf256ed067)
+![ca17691734bcd659d3628c777e51f8f1.png](../_resources/ca17691734bcd659d3628c777e51f8f1.png)
 **Special-Purpose Registers (The Internal Hardware Control)**
 
 These registers have dedicated, unchangeable jobs hardwired into the CPU architecture. Programmers cannot directly use them to store arbitrary data
@@ -101,13 +101,13 @@ The Control Unit fetches instructions, decodes them, and tells the CPU component
 A CPU clock (or clock speed) is an internal timing signal that dictates how many operations a processor can execute per second. 
 
 Measured in gigahertz (GHz), it acts like the heartbeat of your computer—A higher clock speed means the CPU can perform more clock cycles per second.
-![09b5d1470859368c7e227e46e66fce7f.png](:/386628d0da014aeaadeda0effeb80803)
+![09b5d1470859368c7e227e46e66fce7f.png](../_resources/09b5d1470859368c7e227e46e66fce7f.png)
 On each tick, parts of the CPU can perform work.
 
 ##
 ## Fetch–Decode–Execute Cycle
 
-![b49596522425b7f5304fe0e17466702e.png](:/65ba8f2fc81b4098bbcea0fd6ed52c9d)
+![b49596522425b7f5304fe0e17466702e.png](../_resources/b49596522425b7f5304fe0e17466702e.png)
 The Fetch–Decode–Execute Cycle is the continuous process by which a CPU runs a program. The CPU repeatedly fetches an instruction from memory, decodes it to determine what operation is required, and then executes it.
 
  #### **Fetch**
