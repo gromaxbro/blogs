@@ -313,86 +313,6 @@ Stock fame is created for a function.
 
 
 
-## REGISTERS
-General Purpose Registers
-Register	Meaning	Common Use
-RAX	Accumulator	Return values, arithmetic
-RBX	Base Register	General storage
-RCX	Counter	Loops, shift counts
-RDX	Data Register	Multiplication, division
-RSI	Source Index	Source pointer
-RDI	Destination Index	Destination pointer
-RBP	Base Pointer	Current stack frame
-RSP	Stack Pointer	Top of stack
-R8	General Purpose	Extra register
-R9	General Purpose	Extra register
-R10	General Purpose	Extra register
-R11	General Purpose	Extra register
-R12	General Purpose	Extra register
-R13	General Purpose	Extra register
-R14	General Purpose	Extra register
-R15	General Purpose	Extra register
-
-### COST TIME
-Register access - 1ns​
-
-L1 Cache - 2ns​
-
-L2 Cache - 7ns​
-
-L3 Cache - 15ns​
-
-Main Memory - 100 ns​
-
-SSD - 150 us ​
-
-HDD -10 ms
-
-64-bit | 32-bit | 16-bit | 8-bit | Purpose
---------|--------|--------|--------|-------------------------
-RAX     | EAX    | AX     | AL     | Return values, arithmetic
-RBX     | EBX    | BX     | BL     | General storage
-RCX     | ECX    | CX     | CL     | Counter, loops
-RDX     | EDX    | DX     | DL     | Multiplication, division
-RSI     | ESI    | SI     | SIL    | Source pointer
-RDI     | EDI    | DI     | DIL    | Destination pointer
-RBP     | EBP    | BP     | BPL    | Base Pointer
-RSP     | ESP    | SP     | SPL    | Stack Pointer
-R8      | R8D    | R8W    | R8B    | General purpose
-R9      | R9D    | R9W    | R9B    | General purpose
-R10     | R10D   | R10W   | R10B   | General purpose
-R11     | R11D   | R11W   | R11B   | General purpose
-R12     | R12D   | R12W   | R12B   | General purpose
-R13     | R13D   | R13W   | R13B   | General purpose
-R14     | R14D   | R14W   | R14B   | General purpose
-R15     | R15D   | R15W   | R15B   | General purpose
-
-Special Registers
------------------
-RIP     | Instruction Pointer
-RFLAGS  | CPU Flags Register
-
-RAX  = Return value
-RBX  = General storage
-RCX  = 1st argument (Windows x64)
-RDX  = 2nd argument (Windows x64)
-R8   = 3rd argument (Windows x64)
-R9   = 4th argument (Windows x64)
-
-RSP  = Stack Pointer
-RBP  = Base Pointer
-RIP  = Current instruction
-
-RFLAGS Bits
-------------
-ZF = Zero Flag
-CF = Carry Flag
-OF = Overflow Flag
-SF = Sign Flag
-PF = Parity Flag
-AF = Auxiliary Carry
-DF = Direction Flag
-IF = Interrupt Flag
 
 ### LETS RUN THIS CODE
 
@@ -519,3 +439,68 @@ so it jump back to the given address hence return
 0x0013  mov [0x1234], eax 
 
 ```
+
+
+
+## REGISTERS
+
+### COST TIME
+Register access - 1ns​
+
+L1 Cache - 2ns​
+
+L2 Cache - 7ns​
+
+L3 Cache - 15ns​
+
+Main Memory - 100 ns​
+
+SSD - 150 us ​
+
+HDD -10 ms
+
+64-bit | 32-bit | 16-bit | 8-bit | Purpose
+--------|--------|--------|--------|-------------------------
+RAX     | EAX    | AX     | AL     | Return values, arithmetic
+RBX     | EBX    | BX     | BL     | General storage
+RCX     | ECX    | CX     | CL     | Counter, loops
+RDX     | EDX    | DX     | DL     | Multiplication, division
+RSI     | ESI    | SI     | SIL    | Source pointer
+RDI     | EDI    | DI     | DIL    | Destination pointer
+RBP     | EBP    | BP     | BPL    | Base Pointer
+RSP     | ESP    | SP     | SPL    | Stack Pointer
+R8      | R8D    | R8W    | R8B    | General purpose
+R9      | R9D    | R9W    | R9B    | General purpose
+R10     | R10D   | R10W   | R10B   | General purpose
+R11     | R11D   | R11W   | R11B   | General purpose
+R12     | R12D   | R12W   | R12B   | General purpose
+R13     | R13D   | R13W   | R13B   | General purpose
+R14     | R14D   | R14W   | R14B   | General purpose
+R15     | R15D   | R15W   | R15B   | General purpose
+
+Special Registers
+-----------------
+RIP     | Instruction Pointer
+RFLAGS  | CPU Flags Register
+
+RAX  = Return value
+RBX  = General storage
+RCX  = 1st argument (Windows x64)
+RDX  = 2nd argument (Windows x64)
+R8   = 3rd argument (Windows x64)
+R9   = 4th argument (Windows x64)
+
+RSP  = Stack Pointer
+RBP  = Base Pointer
+RIP  = Current instruction
+
+RFLAGS Bits
+------------
+ZF = Zero Flag
+CF = Carry Flag
+OF = Overflow Flag
+SF = Sign Flag
+PF = Parity Flag
+AF = Auxiliary Carry
+DF = Direction Flag
+IF = Interrupt Flag
